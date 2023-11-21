@@ -1,0 +1,133 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+      //900px
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+      //1200px
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 87.5em) {
+      @content;
+      //1800px
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+      //1800px
+    }
+  }
+}
+
+@mixin header2 {
+  font-family: $font-aspergit;
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: -2.82px;
+  text-transform: uppercase;
+  @include respond(big-desktop) {
+    font-size: 9.4rem;
+  }
+  @include respond(desktop) {
+    font-size: 7rem;
+  }
+  @include respond(tab-land) {
+    font-size: 4.8rem;
+  }
+  @include respond(phone) {
+    font-size: 2.8rem;
+    letter-spacing: normal;
+  }
+}
+@mixin header3 {
+  font-family: $font-aspergit;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  @include respond(big-desktop) {
+    font-size: 5.4rem;
+    line-height: 7.7rem;
+  }
+  @include respond(desktop) {
+    font-size: 3.4rem;
+  }
+}
+@mixin header4 {
+  font-family: $font-aspergit;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0.88px;
+  @include respond(big-desktop) {
+    font-size: 4.4rem;
+    line-height: 5rem;
+  }
+  @include respond(desktop) {
+    font-size: 2.6rem;
+  }
+  @include respond(phone) {
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+}
+@mixin header5 {
+  font-family: $font-aspergit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.6px;
+  @include respond(big-desktop) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  @include respond(desktop) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@mixin paragraph {
+  color: $white;
+  font-size: 1.7rem;
+  letter-spacing: -1.2px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: $font-futura;
+
+  @include respond(desktop) {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+}
