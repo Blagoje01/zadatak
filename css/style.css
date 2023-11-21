@@ -108,6 +108,11 @@
       display: block;
       font-size: 2.4rem;
       text-align: center; }
+  @media only screen and (min-width: 87.5em) {
+    .hero .hero__text-box {
+      width: 65.7rem;
+      margin-left: 38rem;
+      margin-bottom: 9.3rem; } }
   @media only screen and (min-width: 112.5em) {
     .hero {
       margin-bottom: 22.5rem; }
@@ -122,7 +127,7 @@
         margin-bottom: 1.7rem; }
       .hero .hero__text-box {
         width: 65.7rem;
-        margin-left: 113rem;
+        margin-left: 95rem;
         margin-bottom: 9.3rem; } }
   @media only screen and (max-width: 75em) {
     .hero {
@@ -437,7 +442,8 @@
           line-height: 3.3rem; } }
     @media (hover: hover) {
       .why-us__item:hover {
-        background: #4417a7; } }
+        background: #4417a7;
+        transform: translateY(-5px); } }
   @media only screen and (min-width: 112.5em) {
     .why-us {
       margin-bottom: 42.4rem; }

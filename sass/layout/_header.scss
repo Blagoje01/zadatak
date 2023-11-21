@@ -119,6 +119,13 @@
       text-align: center;
     }
   }
+  @include respond(desktop) {
+    .hero__text-box {
+      width: 65.7rem;
+      margin-left: 38rem;
+      margin-bottom: 9.3rem;
+    }
+  }
   @include respond(big-desktop) {
     margin-bottom: 22.5rem;
 
@@ -135,10 +142,11 @@
     }
     .hero__text-box {
       width: 65.7rem;
-      margin-left: 113rem;
+      margin-left: 95rem;
       margin-bottom: 9.3rem;
     }
   }
+
   /////////////////////////////////
   @include respond(tab-land) {
     margin-left: 10rem;
