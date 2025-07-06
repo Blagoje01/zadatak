@@ -1,0 +1,82 @@
+.footer {
+  position: relative;
+  &__vector {
+    width: 35rem;
+    display: block;
+    height: 35rem;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+  }
+  @media only screen and (max-width: 112.5em) {
+    .footer__vector {
+      display: none;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+  @include respond(big-desktop) {
+    .footer__container {
+      display: flex;
+      justify-content: start;
+      gap: 20rem;
+    }
+  }
+  // @include respond(big-desktop) {
+  //   display: flex;
+  //   gap: 20rem;
+  // }
+  padding: 3rem 0;
+
+  &__logo {
+    width: 18.5rem;
+    height: 3rem;
+    @include respond(big-desktop) {
+      width: 21.7rem;
+      height: 4rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    li {
+      font-size: 1.8rem;
+      font-family: $font-futura;
+      font-weight: 300;
+      line-height: 3.2rem;
+    }
+  }
+
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    font-size: 2rem;
+  }
+  small {
+    display: block;
+    text-align: center;
+    // margin-top: 5rem;
+  }
+  @include respond(big-desktop) {
+    margin-bottom: 0rem;
+  }
+  @include respond(phone) {
+    .footer__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    .footer__logo {
+      margin: 0 auto;
+    }
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}

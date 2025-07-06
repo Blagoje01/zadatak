@@ -1,0 +1,1044 @@
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+@import url(https://db.onlinewebfonts.com/c/8bc1dd891b1de548355dc333006cc94c?family=Aspergit);
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15rem;
+  height: 8.6rem;
+  align-items: center;
+  margin-bottom: 15rem;
+  width: 100%;
+  z-index: 111; }
+  .header-logo {
+    width: 18.5rem;
+    height: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .header-logo {
+        width: 21.7rem;
+        height: 4rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .header {
+      margin-bottom: 19.2rem; } }
+  @media only screen and (max-width: 75em) {
+    .header {
+      padding: 0 8rem;
+      margin-bottom: 9rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      padding: 0 6rem;
+      margin-bottom: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 0 4rem;
+      margin-bottom: 4rem; } }
+
+.nav__list {
+  list-style: none;
+  display: flex; }
+
+.nav__item {
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "Futura PT";
+  font-weight: 300;
+  line-height: 3.2rem; }
+  @media only screen and (min-width: 112.5em) {
+    .nav__item {
+      font-size: 2.8rem; } }
+  .nav__item:first-child {
+    padding-right: 1rem; }
+    .nav__item:first-child::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 13px;
+      z-index: 222;
+      background-color: #f2f2f2;
+      bottom: 25%;
+      right: 0;
+      border-radius: 50px; }
+      @media only screen and (min-width: 112.5em) {
+        .nav__item:first-child::after {
+          width: 2px;
+          height: 2rem;
+          bottom: 20%; } }
+  .nav__item:nth-child(2) {
+    padding-left: 1rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .nav {
+    display: none; } }
+
+.hero {
+  margin-left: 16rem;
+  margin-bottom: 15rem; }
+  .hero__title {
+    font-size: 7.5rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Aspergit";
+    line-height: 117%; }
+    .hero__title span {
+      color: #d5ff2f; }
+  .hero__text-social {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3.6rem; }
+  .hero__text-box {
+    margin-left: 56rem;
+    margin-right: 15rem; }
+  .hero__text {
+    margin-bottom: 2.9rem;
+    color: #f2f2f2;
+    font-size: 1.7rem;
+    letter-spacing: -1.2px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Futura PT"; }
+    @media only screen and (min-width: 87.5em) {
+      .hero__text {
+        font-size: 3rem;
+        line-height: 3.3rem; } }
+  .hero .social {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem; }
+    .hero .social__icon {
+      display: block;
+      font-size: 2.4rem;
+      text-align: center; }
+  @media only screen and (min-width: 87.5em) {
+    .hero .hero__text-box {
+      width: 65.7rem;
+      margin-left: 38rem;
+      margin-bottom: 9.3rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .hero {
+      margin-bottom: 22.5rem; }
+      .hero .hero__title {
+        font-size: 11.3rem;
+        color: #fff;
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Aspergit";
+        letter-spacing: 5px; }
+      .hero .hero__text-social {
+        margin-bottom: 1.7rem; }
+      .hero .hero__text-box {
+        width: 65.7rem;
+        margin-left: 95rem;
+        margin-bottom: 9.3rem; } }
+  @media only screen and (max-width: 75em) {
+    .hero {
+      margin-left: 10rem; }
+      .hero .hero__title {
+        font-size: 5rem;
+        letter-spacing: 0; }
+      .hero .hero__text-box {
+        width: 65.7rem;
+        margin-bottom: 9.3rem;
+        margin-left: 0;
+        margin-top: -5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      margin-left: 6rem;
+      margin-bottom: 10rem; }
+      .hero .hero__title {
+        font-size: 3.5rem; }
+      .hero .hero__text-box {
+        width: 65.7rem;
+        margin-bottom: 9.3rem;
+        margin-left: 0;
+        margin-top: -7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
+      margin-left: 4rem;
+      margin-bottom: 10rem; }
+      .hero .hero__title {
+        font-size: 2rem;
+        margin-bottom: 10rem; }
+      .hero .hero__text-box {
+        width: 100%;
+        margin-bottom: 9.3rem;
+        margin-left: 0; }
+      .hero .social {
+        display: none; } }
+
+.sticky {
+  position: fixed;
+  background-color: rgba(45, 12, 116, 0.5);
+  backdrop-filter: blur(8px); }
+
+.social-sticky {
+  position: fixed;
+  right: 3.6rem;
+  top: 10rem; }
+
+.footer {
+  position: relative;
+  padding: 3rem 0; }
+  .footer__vector {
+    width: 35rem;
+    display: block;
+    height: 35rem;
+    position: absolute;
+    top: 0rem;
+    right: 0; }
+  @media only screen and (max-width: 112.5em) {
+    .footer .footer__vector {
+      display: none; } }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem; }
+  @media only screen and (min-width: 112.5em) {
+    .footer .footer__container {
+      display: flex;
+      justify-content: start;
+      gap: 20rem; } }
+  .footer__logo {
+    width: 18.5rem;
+    height: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .footer__logo {
+        width: 21.7rem;
+        height: 4rem; } }
+  .footer__list {
+    list-style: none; }
+    .footer__list li {
+      font-size: 1.8rem;
+      font-family: "Futura PT";
+      font-weight: 300;
+      line-height: 3.2rem; }
+  .footer__social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    font-size: 2rem; }
+  .footer small {
+    display: block;
+    text-align: center; }
+  @media only screen and (min-width: 112.5em) {
+    .footer {
+      margin-bottom: 0rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer .footer__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem; }
+    .footer .footer__logo {
+      margin: 0 auto; }
+    .footer .footer__social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem; } }
+
+.animation {
+  margin-bottom: 15rem; }
+  .animation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto; }
+  .animation__slider {
+    width: 100%;
+    height: 55rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; }
+    .animation__slider-dots {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex; }
+      .animation__slider-dots--dot {
+        border: none;
+        background-color: #361281;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        margin-right: 1.75rem;
+        cursor: pointer;
+        transition: all 0.5s; }
+        .animation__slider-dots--dot__active {
+          background-color: #f76565; }
+    .animation__slider-btn {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      border: none;
+      background: rgba(255, 255, 255, 0.7);
+      font-family: inherit;
+      color: #333;
+      border-radius: 50%;
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: 2.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+    .animation__slider-btn--left {
+      left: 5%;
+      transform: translate(-50%, -50%); }
+    .animation__slider-btn--right {
+      right: 5%;
+      transform: translate(50%, -50%); }
+    .animation__slider-slide {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.8rem; }
+      .animation__slider-slide-1 {
+        background-image: url("../images/ANIMATION.png");
+        background-size: cover;
+        object-fit: cover; }
+      .animation__slider-slide-2 {
+        background-image: url("../images/animation2.jpg"); }
+      .animation__slider-slide-3 {
+        background-image: url("../images/animation3.jpg"); }
+  @media only screen and (min-width: 112.5em) {
+    .animation {
+      margin-bottom: 24.4rem; }
+      .animation .animation__slider {
+        height: 82.7rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .animation .animation__slider {
+      height: 35rem; } }
+  @media only screen and (max-width: 75em) {
+    .animation .animation__slider {
+      width: 100%;
+      height: 45rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .animation {
+      margin-bottom: 13rem; }
+      .animation .animation__slider {
+        width: 100%;
+        height: 30rem; }
+      .animation .animation__slider-btn--left {
+        left: 10%;
+        top: 80%; }
+      .animation .animation__slider-btn--right {
+        right: 10%;
+        top: 80%; }
+      .animation .animation__slider-dots {
+        display: none; } }
+
+.third {
+  margin-bottom: 2.5rem; }
+  .third__title {
+    font-family: "Aspergit";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: -2.82px;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .third__title {
+        font-size: 9.4rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .third__title {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 75em) {
+      .third__title {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .third__title {
+        font-size: 2.8rem;
+        letter-spacing: normal; } }
+  .third__text p {
+    color: #f2f2f2;
+    font-size: 1.7rem;
+    letter-spacing: -1.2px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Futura PT";
+    margin-bottom: 8rem; }
+    @media only screen and (min-width: 87.5em) {
+      .third__text p {
+        font-size: 3rem;
+        line-height: 3.3rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .third__text p {
+        width: 88.6rem;
+        margin-bottom: 13rem; } }
+  .third__video-box img {
+    width: 100%; }
+
+.why-us {
+  margin-bottom: 15rem; }
+  .why-us__title {
+    font-family: "Aspergit";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: -2.82px;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .why-us__title {
+        font-size: 9.4rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .why-us__title {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 75em) {
+      .why-us__title {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .why-us__title {
+        font-size: 2.8rem;
+        letter-spacing: normal; } }
+  .why-us__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    row-gap: 5rem; }
+  .why-us__item {
+    transition: all 0.4s;
+    padding: 2rem; }
+    .why-us__item h4 {
+      font-family: "Aspergit";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3rem;
+      letter-spacing: 0.88px;
+      margin-bottom: 3rem; }
+      @media only screen and (min-width: 112.5em) {
+        .why-us__item h4 {
+          font-size: 4.4rem;
+          line-height: 5rem; } }
+      @media only screen and (min-width: 87.5em) {
+        .why-us__item h4 {
+          font-size: 2.6rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .why-us__item h4 {
+          font-size: 1.8rem;
+          line-height: normal; } }
+    .why-us__item p {
+      color: #f2f2f2;
+      font-size: 1.7rem;
+      letter-spacing: -1.2px;
+      font-weight: 300;
+      font-style: normal;
+      font-family: "Futura PT"; }
+      @media only screen and (min-width: 87.5em) {
+        .why-us__item p {
+          font-size: 3rem;
+          line-height: 3.3rem; } }
+    @media (hover: hover) {
+      .why-us__item:hover {
+        background: #4417a7;
+        transform: translateY(-5px); } }
+  @media only screen and (min-width: 112.5em) {
+    .why-us {
+      margin-bottom: 42.4rem; }
+      .why-us .why-us__title {
+        margin-bottom: 8.2rem; }
+      .why-us .why-us__items {
+        column-gap: 10rem;
+        row-gap: 15rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .why-us {
+      margin-bottom: 10rem; }
+      .why-us .why-us__items {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        row-gap: 4rem; }
+      .why-us .why-us__item h4 {
+        margin-bottom: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .why-us .why-us__items {
+      column-gap: 0rem; } }
+
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rem;
+  position: relative; }
+  .testimonial__img .bogdan {
+    width: 30rem;
+    height: 30rem; }
+  .testimonial__desc-heading {
+    margin-left: 4.1rem;
+    margin-bottom: 2rem; }
+  .testimonial__desc h3 {
+    font-family: "Aspergit";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; }
+    @media only screen and (min-width: 112.5em) {
+      .testimonial__desc h3 {
+        font-size: 5.4rem;
+        line-height: 7.7rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .testimonial__desc h3 {
+        font-size: 3.4rem; } }
+  .testimonial__desc h5 {
+    font-family: "Aspergit";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.6px; }
+    @media only screen and (min-width: 112.5em) {
+      .testimonial__desc h5 {
+        font-size: 3rem;
+        line-height: 3rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .testimonial__desc h5 {
+        font-size: 2rem;
+        line-height: 3rem; } }
+  .testimonial__desc p {
+    color: #f2f2f2;
+    font-size: 1.7rem;
+    letter-spacing: -1.2px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Futura PT";
+    margin-left: 7rem;
+    position: relative; }
+    @media only screen and (min-width: 87.5em) {
+      .testimonial__desc p {
+        font-size: 3rem;
+        line-height: 3.3rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .testimonial {
+      margin-bottom: 37.4rem; }
+      .testimonial .testimonial__desc-heading {
+        margin-bottom: 4.8rem; }
+      .testimonial .testimonial__desc p::after {
+        content: url(../images/quote.png);
+        position: absolute;
+        left: -62px;
+        top: 0; }
+      .testimonial p {
+        width: 77.9rem;
+        margin-left: 11rem; }
+      .testimonial .testimonial__img .bogdan {
+        width: 45.8rem;
+        height: 45.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial {
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .testimonial .testimonial__img .bogdan {
+      width: 20rem;
+      height: 20rem; } }
+
+.constributors {
+  margin-bottom: 20rem; }
+  .constributors img {
+    width: 20rem;
+    height: 20rem; }
+  .constributors__title {
+    font-family: "Aspergit";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: -2.82px;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .constributors__title {
+        font-size: 9.4rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .constributors__title {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 75em) {
+      .constributors__title {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .constributors__title {
+        font-size: 2.8rem;
+        letter-spacing: normal; } }
+  .constributors__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 6rem; }
+    .constributors__cards h5 {
+      font-family: "Aspergit";
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3rem;
+      letter-spacing: -0.6px;
+      color: #d5ff2f; }
+      @media only screen and (min-width: 112.5em) {
+        .constributors__cards h5 {
+          font-size: 3rem;
+          line-height: 3rem; } }
+      @media only screen and (min-width: 87.5em) {
+        .constributors__cards h5 {
+          font-size: 2rem;
+          line-height: 3rem; } }
+  .constributors h3 {
+    font-family: "Aspergit";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; }
+    @media only screen and (min-width: 112.5em) {
+      .constributors h3 {
+        font-size: 5.4rem;
+        line-height: 7.7rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .constributors h3 {
+        font-size: 3.4rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .constributors {
+      margin-bottom: 30.7rem; }
+      .constributors .constributors__title {
+        margin-bottom: 5.7rem; }
+      .constributors .constributors__cards {
+        column-gap: 23.1rem;
+        row-gap: 6.6rem; } }
+  @media only screen and (max-width: 75em) {
+    .constributors {
+      margin-bottom: 15rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .constributors .constributors__cards {
+      grid-template-columns: repeat(2, 1fr); }
+    .constributors .constributors__card {
+      text-align: center; }
+    .constributors .constributors__title {
+      text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .constributors .constributors__cards {
+      grid-template-columns: 1fr; } }
+
+.join {
+  margin-bottom: 15rem; }
+  .join__title {
+    font-family: "Aspergit";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: -2.82px;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .join__title {
+        font-size: 9.4rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .join__title {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 75em) {
+      .join__title {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .join__title {
+        font-size: 2.8rem;
+        letter-spacing: normal; } }
+  @media only screen and (min-width: 112.5em) {
+    .join {
+      margin-bottom: 14.3rem; }
+      .join .join__title {
+        margin-bottom: 5.7rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .join {
+      margin-bottom: 10rem; } }
+
+img {
+  width: 100%; }
+
+.video {
+  margin-bottom: 15rem; }
+  .video__title {
+    font-family: "Aspergit";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: -2.82px;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .video__title {
+        font-size: 9.4rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .video__title {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 75em) {
+      .video__title {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .video__title {
+        font-size: 2.8rem;
+        letter-spacing: normal; } }
+  .video img {
+    width: 100%; }
+  @media only screen and (min-width: 112.5em) {
+    .video {
+      margin-bottom: 26.5rem; }
+      .video .join__title {
+        margin-bottom: 5rem; } }
+
+.news {
+  margin-bottom: 5rem; }
+  .news__title {
+    font-family: "Aspergit";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: -2.82px;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 112.5em) {
+      .news__title {
+        font-size: 9.4rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .news__title {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 75em) {
+      .news__title {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .news__title {
+        font-size: 2.8rem;
+        letter-spacing: normal; } }
+  .news img {
+    width: 100%;
+    margin-bottom: 2rem; }
+  .news__cards {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 2rem; }
+  .news__card h4 {
+    font-family: "Aspergit";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.88px; }
+    @media only screen and (min-width: 112.5em) {
+      .news__card h4 {
+        font-size: 4.4rem;
+        line-height: 5rem; } }
+    @media only screen and (min-width: 87.5em) {
+      .news__card h4 {
+        font-size: 2.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .news__card h4 {
+        font-size: 1.8rem;
+        line-height: normal; } }
+  .news__card small {
+    margin-bottom: 2rem; }
+  .news__cta {
+    text-decoration: none;
+    color: #d5ff2f;
+    font-family: "Aspergit";
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+    margin-top: -2rem; }
+  @media only screen and (min-width: 112.5em) {
+    .news {
+      margin-bottom: 15.4rem; }
+      .news .news__cta {
+        font-size: 1.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .news .news__cards {
+      display: flex;
+      flex-direction: column; } }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  color: #f2f2f2;
+  font-family: "Aspergit"; }
+
+body {
+  background-color: #361281;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+@media only screen and (min-width: 112.5em) {
+  main {
+    background-image: url(../images/decoration.png);
+    background-size: cover;
+    background-position: 50% 25%;
+    position: relative;
+    z-index: 1111111; } }
+
+.small-text {
+  font-family: "Futura PT";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -1.12px; }
+  @media only screen and (min-width: 112.5em) {
+    .small-text {
+      font-size: 2.8rem;
+      line-height: 3.2rem; } }
+
+.btn {
+  background-color: #d5ff2f;
+  font-family: "Aspergit";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 111%;
+  letter-spacing: 0.9px;
+  width: 150px;
+  height: 40px;
+  border-radius: 200px;
+  border: none;
+  outline: none;
+  margin-bottom: 15rem; }
+
+.btn-constributor {
+  width: 180px;
+  height: 35px;
+  font-family: Aspergit;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111%;
+  /* 19.98px */
+  letter-spacing: -0.54px;
+  text-transform: uppercase; }
+
+.svg {
+  width: 17.7rem;
+  height: 5.5rem; }
+  @media only screen and (min-width: 112.5em) {
+    .svg {
+      width: 21.7rem;
+      height: 6.5rem; } }
+
+.svg-2 {
+  width: 17.8rem;
+  height: 5rem;
+  margin-bottom: 4rem; }
+  .svg-2__text-2 {
+    font-size: 1.6rem; }
+  @media only screen and (min-width: 112.5em) {
+    .svg-2 {
+      width: 24.8rem;
+      margin-bottom: 7rem;
+      height: 5rem; } }
+
+.svg-3 {
+  width: 18rem;
+  height: 5rem; }
+  .svg-3__text-3 {
+    font-size: 1.6rem; }
+  @media only screen and (min-width: 112.5em) {
+    .svg-3 {
+      width: 20rem;
+      height: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .svg-3 {
+      display: block;
+      width: 100%;
+      margin: 0 auto; } }
+
+.yellow-span {
+  color: #d5ff2f; }
+
+.container {
+  margin: 0 15rem; }
+  @media only screen and (min-width: 112.5em) {
+    .container {
+      margin: 0 28.7rem;
+      padding-left: 2.9rem; } }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0 10rem;
+      padding-left: 2.9rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      margin: 0 6rem;
+      padding-left: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      margin: 0 3rem;
+      padding-left: 0; } }
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 99; }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger {
+      display: block; } }
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s; }
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px); }
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px); }
+
+.hamburger.is-active .bar {
+  opacity: 0; }
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #361281;
+  padding-top: 120px;
+  transition: 0.4s; }
+  .mobile-nav__social {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+    .mobile-nav__social li {
+      font-size: 2rem; }
+      .mobile-nav__social li:not(:last-child) {
+        padding-right: 2rem; }
+
+.mobile-nav.is-active {
+  left: 0; }
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #1f103f;
+  color: #fff;
+  text-decoration: none; }
+
+.mobile-nav a:hover {
+  background-color: #24104f; }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #361281;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 11111000;
+  transition: all 0.5s;
+  color: #fff;
+  font-family: "Futura PT"; }
+  .modal__form {
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2.5rem; }
+    .modal__form label {
+      font-size: 1.7rem;
+      font-weight: 500; }
+    .modal__form input {
+      font-size: 1.7rem;
+      padding: 1rem 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem; }
+    .modal__form button {
+      grid-column: 1 / span 2;
+      justify-self: center;
+      margin-top: 1rem;
+      border: 0;
+      padding: 1rem 2rem;
+      border-radius: 2.5rem;
+      background-color: #d5ff2f;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "Futura PT"; }
+  .modal__header {
+    font-size: 3.25rem;
+    margin-bottom: 4.5rem;
+    line-height: 1.5; }
+  @media only screen and (max-width: 37.5em) {
+    .modal .modal__form {
+      gap: 1rem;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column; }
+    .modal .modal__form input {
+      margin: 0 2rem; }
+    .modal .modal__header {
+      font-size: 2.25rem;
+      text-align: center;
+      padding-top: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .modal {
+      max-width: 40rem;
+      padding: 0; } }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s; }
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none; }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0; }

@@ -1,0 +1,413 @@
+.animation {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    width: 100%;
+    height: 55rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    &-dots {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      &--dot {
+        border: none;
+        background-color: $backgroundColor;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        margin-right: 1.75rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        &__active {
+          background-color: rgb(247, 101, 101);
+        }
+      }
+    }
+    &-btn {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      border: none;
+      background: rgba(255, 255, 255, 0.7);
+      font-family: inherit;
+      color: #333;
+      border-radius: 50%;
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: 2.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    &-btn--left {
+      left: 5%;
+      transform: translate(-50%, -50%);
+    }
+    &-btn--right {
+      right: 5%;
+      transform: translate(50%, -50%);
+    }
+
+    &-slide {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.8rem;
+
+      &-1 {
+        background-image: url('../images/ANIMATION.png');
+        background-size: cover;
+        object-fit: cover;
+      }
+      &-2 {
+        background-image: url('../images/animation2.jpg');
+      }
+      &-3 {
+        background-image: url('../images/animation3.jpg');
+      }
+    }
+  }
+  margin-bottom: 15rem;
+  @include respond(big-desktop) {
+    margin-bottom: 24.4rem;
+    .animation__slider {
+      height: 82.7rem;
+    }
+  }
+  @include respond(tab-port) {
+    .animation__slider {
+      height: 35rem;
+    }
+  }
+  @include respond(tab-land) {
+    .animation__slider {
+      width: 100%;
+      height: 45rem;
+    }
+  }
+  @include respond(phone) {
+    margin-bottom: 13rem;
+    .animation__slider {
+      width: 100%;
+      height: 30rem;
+    }
+    .animation__slider-btn--left {
+      left: 10%;
+      top: 80%;
+    }
+    .animation__slider-btn--right {
+      right: 10%;
+      top: 80%;
+    }
+    .animation__slider-dots {
+      display: none;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+.third {
+  margin-bottom: 2.5rem;
+  &__title {
+    @include header2;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    p {
+      @include paragraph;
+      margin-bottom: 8rem;
+      @include respond(big-desktop) {
+        width: 88.6rem;
+        margin-bottom: 13rem;
+      }
+    }
+  }
+  &__video-box {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.why-us {
+  margin-bottom: 15rem;
+  &__title {
+    @include header2;
+    margin-bottom: 3rem;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    row-gap: 5rem;
+  }
+  &__item {
+    transition: all 0.4s;
+    padding: 2rem;
+    h4 {
+      @include header4;
+      margin-bottom: 3rem;
+    }
+    p {
+      @include paragraph;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background: #4417a7;
+        transform: translateY(-5px);
+      }
+    }
+  }
+  @include respond(big-desktop) {
+    margin-bottom: 42.4rem;
+    .why-us__title {
+      margin-bottom: 8.2rem;
+    }
+    .why-us__items {
+      column-gap: 10rem;
+      row-gap: 15rem;
+    }
+  }
+  @include respond(tab-port) {
+    .why-us__items {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 4rem;
+      row-gap: 4rem;
+    }
+    .why-us__item h4 {
+      margin-bottom: 1rem;
+    }
+    margin-bottom: 10rem;
+  }
+  @include respond(phone) {
+    .why-us__items {
+      column-gap: 0rem;
+    }
+  }
+}
+
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rem;
+  position: relative;
+
+  &__img {
+    .bogdan {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+  &__desc {
+    &-heading {
+      margin-left: 4.1rem;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      @include header3;
+    }
+    h5 {
+      @include header5;
+    }
+    p {
+      @include paragraph;
+      margin-left: 7rem;
+      position: relative;
+    }
+  }
+
+  @include respond(big-desktop) {
+    margin-bottom: 37.4rem;
+    .testimonial__desc-heading {
+      margin-bottom: 4.8rem;
+    }
+    .testimonial__desc p {
+      &::after {
+        content: url(../images/quote.png);
+        position: absolute;
+        left: -62px;
+        top: 0;
+      }
+    }
+    p {
+      width: 77.9rem;
+      margin-left: 11rem;
+    }
+    .testimonial__img .bogdan {
+      width: 45.8rem;
+      height: 45.8rem;
+    }
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 15rem;
+  }
+  @include respond(phone) {
+    .testimonial__img .bogdan {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+}
+
+.constributors {
+  margin-bottom: 20rem;
+
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
+  &__title {
+    @include header2;
+    margin-bottom: 3rem;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 6rem;
+    h5 {
+      @include header5;
+      color: $yellow;
+    }
+  }
+  h3 {
+    @include header3;
+  }
+  @include respond(big-desktop) {
+    margin-bottom: 30.7rem;
+    .constributors__title {
+      margin-bottom: 5.7rem;
+    }
+    .constributors__cards {
+      column-gap: 23.1rem;
+      row-gap: 6.6rem;
+    }
+  }
+  @include respond(tab-land) {
+    margin-bottom: 15rem;
+  }
+  @include respond(tab-port) {
+    .constributors__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .constributors__card {
+      text-align: center;
+    }
+    .constributors__title {
+      text-align: center;
+    }
+  }
+  @include respond(phone) {
+    .constributors__cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.join {
+  margin-bottom: 15rem;
+  &__title {
+    @include header2;
+    margin-bottom: 3rem;
+  }
+  @include respond(big-desktop) {
+    .join__title {
+      margin-bottom: 5.7rem;
+    }
+    margin-bottom: 14.3rem;
+  }
+  @include respond(tab-port) {
+    margin-bottom: 10rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.video {
+  margin-bottom: 15rem;
+  &__title {
+    @include header2;
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+  }
+  @include respond(big-desktop) {
+    .join__title {
+      margin-bottom: 5rem;
+    }
+    margin-bottom: 26.5rem;
+  }
+}
+.news {
+  margin-bottom: 5rem;
+  &__title {
+    @include header2;
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  &__cards {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  &__card {
+    h4 {
+      @include header4;
+    }
+    small {
+      margin-bottom: 2rem;
+    }
+  }
+  &__cta {
+    text-decoration: none;
+    color: $yellow;
+    font-family: $font-aspergit;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+    margin-top: -2rem;
+  }
+  @include respond(big-desktop) {
+    margin-bottom: 15.4rem;
+    .news__cta {
+      font-size: 1.8rem;
+    }
+  }
+  @include respond(tab-port) {
+    .news__cards {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
